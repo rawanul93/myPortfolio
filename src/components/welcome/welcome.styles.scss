@@ -1,0 +1,46 @@
+.welcome {
+
+    display: flex;
+    flex-direction: column;
+    color: #cecece;
+    margin-top: 50px;
+    
+    
+   
+    .welcome-main {
+
+        font-size: 50px;
+        font-style: italic;
+        animation: 2s ease-out transitionIn;
+
+    }
+
+    .welcome-sub {
+        display: flex;
+        justify-content: space-between;
+
+        .sub-text {
+            width: 70%;
+        }
+        .button-portfolio {
+            margin-right: 60px;
+            font-size: 18px;
+        }
+
+    
+    }
+
+    @keyframes transitionIn {
+        from {
+            opacity: 0%;
+            transform: rotateX(-10deg)
+        }
+
+        to {
+            from {
+                opacity: 100%;
+                transform: rotateX(0)
+            }
+        }
+    }
+}
