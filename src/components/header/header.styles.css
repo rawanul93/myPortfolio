@@ -100,7 +100,8 @@
     position: absolute;
     left: 0%;
     bottom: 0;
-    width: 390px;
+    /* width: 390px; */
+    width: 1em;
     height: 3px;
     background-color: #fff;
     border-radius: 5px;

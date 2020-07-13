@@ -1,23 +1,80 @@
-import React from 'react';
-import './header.styles.css';
+import React, { useContext, useEffect } from "react";
+import "./header.styles.css";
 
-class Header extends React.Component  {
-    
-    state = {
-        selectedTab: 1 //home by default
-    }
+import { useLocation, useHistory } from "react-router-dom";
 
-    render() {
-        const { selectedTab } = this.state;
-        return (
-            <div className='header'>
-                <span className={`${selectedTab === 1? "selected" : ""} option`}>Home</span>
-                <span className='option'>Portfolio</span>
-                <span className='option'>Contact</span>
-                <div id='indicator'></div>. 
-            </div>
-        )
+//context
+import { SelectedTabContext } from "../../contexts/selectedTabContext";
+
+const Header = () => {
+  const { tab, changeTab } = useContext(SelectedTabContext);
+ 
+  let location = useLocation();
+  let history = useHistory();
+  
+  console.log(location);
+  
+  useEffect(() => {
+    let path = location.pathname;
+    switch (path) {
+      case '/':
+        changeTab(1);
+        break;
+      case '/portfolio':
+        changeTab(2);
+        break;
+      case '/contact':
+        changeTab(3);
+        break;
     }
-}
+  })
+
+  const handleClick = (selection) => {
+
+    if (selection === tab) return;
+
+    switch (selection) {
+      case 1:
+        changeTab(selection);
+        history.push("/");
+        break;
+      case 2:
+        changeTab(selection);
+        history.push("/portfolio");
+        break;
+      case 3:
+        changeTab(selection);
+        history.push("/contact");
+        break;
+      default:
+        history.push("/");
+    }
+  };
+
+  return (
+
+    <div className="header">
+      <span
+        onClick={() => handleClick(1)}
+        className={`${tab === 1 ? "selected" : ""} option`}
+      >
+        Home
+      </span>
+      <span
+        onClick={() => handleClick(2)}
+        className={`${tab === 2 ? "selected" : ""} option`}
+      >
+        Portfolio
+      </span>
+      <span
+        onClick={() => handleClick(3)}
+        className={`${tab === 3 ? "selected" : ""} option`}
+      >
+        Contact
+      </span>
+      <div id="indicator"></div>.
+    </div>
+  );
+};
 
 export default Header;

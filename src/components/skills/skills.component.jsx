@@ -76,7 +76,7 @@ const Skills = () => {
         </div>
       </div>
       <div className="skill-group" style={{ width: "200px" }}>
-        <h5>Others</h5>
+        <h5 style={{textDecoration:'underline'}}>Full Resume</h5>
       </div>
     </div>
   );

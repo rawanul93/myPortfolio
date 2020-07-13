@@ -4,13 +4,16 @@
     flex-direction: column;
     color: #cecece;
     margin-top: 50px;
+    margin-left: 20px;
     
-    
+    .intro {
+        font-size: 60px;
+    }
    
     .welcome-main {
 
-        font-size: 50px;
-        font-style: italic;
+        font-size: 36px;
+        // font-style: italic;
         animation: 2s ease-out transitionIn;
 
     }
@@ -23,11 +26,11 @@
             width: 70%;
         }
         .button-portfolio {
-            margin-right: 60px;
-            font-size: 18px;
+            margin-right: 40px;
+            font-size: 22px;
+            background-color: #292727;
+            height: 80px;
         }
-
-    
     }
 
     @keyframes transitionIn {

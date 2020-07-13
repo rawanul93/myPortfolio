@@ -17,8 +17,8 @@ const HomePage = () => {
   return (
     <div>
       <Jumbotron className="home-container">
-        <ProfileCard />   
         <Welcome />
+        <ProfileCard />   
       </Jumbotron>
     
     </div>
