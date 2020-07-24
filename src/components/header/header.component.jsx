@@ -26,6 +26,8 @@ const Header = () => {
       case '/contact':
         changeTab(3);
         break;
+      default:
+        changeTab(1);
     }
   })
 
@@ -53,7 +55,8 @@ const Header = () => {
 
   return (
 
-    <div className="header">
+    <div className='header-wrapper'>
+      <div className="header">
       <span
         onClick={() => handleClick(1)}
         className={`${tab === 1 ? "selected" : ""} option`}
@@ -72,8 +75,11 @@ const Header = () => {
       >
         Contact
       </span>
-      <div id="indicator"></div>.
+        <div id="indicator"></div>.
+    
+      </div>
     </div>
+    
   );
 };
 

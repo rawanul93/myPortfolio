@@ -1,21 +1,13 @@
-.project {
-    background-color: rgba($color: #1c1b1a, $alpha: 0.9);
-    display: flex;
+.project-container {
+    background-color: rgba($color: #1c1b1a, $alpha: 0);
+    // display: flex;
     margin: 60px 90px;
-    border-radius: 10px;
-	padding: 0px 60px;
-    box-shadow: 0 8px 40px rgba(#000000, 0.2);
-    border-style: groove;
-    border-width: 5px;
-    border-color: rgba($color: #161615, $alpha: 1);
-    overflow: hidden;
-
-
-
-    // .row {
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: space-between;
-    // }
+    padding: 0px 70px;
+    height: 750px;
+    
+    // box-shadow: 0 8px 40px rgba(#000000, 0.2);
+    // border-style: groove;
+    // border-width: 5px;
+    // border-color: rgba($color: #161615, $alpha: 1);
 
 }

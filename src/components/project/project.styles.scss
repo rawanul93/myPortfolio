@@ -1,0 +1,97 @@
+.project {
+    color: white;
+
+    
+        h1 {
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 30px;
+            // background-color: #292727;
+            background-color:  rgb(38, 131, 146, 0.5);
+            // border-style: solid;
+            // border-color: rgb(38, 131, 146, 0.5);
+            border-radius: 10px;
+        }
+
+    .content {
+        display: flex;
+
+
+        .features {
+            width: 40%;
+            margin-right: 40px;
+
+            .button-group {
+
+                display: flex;
+                justify-content: space-around;
+                .github-btn {
+                    background-color: #333;
+                    &:hover {
+                        background-color: rgb(73, 73, 73);
+                        transition: 0.3s ease-out;   
+                    }
+                }
+                .demo-btn {
+                    background-color:#0065d1;
+                    &:hover {
+                        background-color:#007bff;
+                        transition: 0.3s ease-out;
+                    }
+                }
+            }
+
+            
+        }
+
+        .project-images {
+            img {
+                height: 600px;
+                width: 800px;
+            }
+
+        }
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        // 
+        height: 60px;
+        width: fit-content;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: white;
+        font-size: 18px;
+        text-align: justify;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease-in;
+        
+    }
+
+
+    ul {
+        list-style-type: disc;
+        font-size: 20px;
+        
+        li {
+            text-align: start;
+            margin: 10px;
+            list-style-position: outside;
+        }
+        
+    }
+
+    img {
+        // padding: 5px;
+        margin-right: 10px;
+        height: 26px;
+        width: auto;
+        // height: 20px;
+        // width: 20px;
+    }
+
+
+}

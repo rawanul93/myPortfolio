@@ -1,36 +1,29 @@
-import React, { useState } from 'react';
+import React from "react";
 
 //syling
-import './portfolio.styles.scss';
+import "./portfolio.styles.scss";
+import { Jumbotron, Carousel } from "react-bootstrap";
 
 //components
-import ProfileCard from '../../components/profile-card/profile-card.component';
-import Welcome from '../../components/welcome/welcome.component';
-import { Jumbotron, Carousel } from 'react-bootstrap';
+import Project from "../../components/project/project.component";
 
+//data
+import PROJECTS from "../../projectData";
 
-const Portfolio = () => {
+const projects = PROJECTS;
 
-    return (
-        <div>
-          <Carousel style={{marginTop: '50px'}} >
-              <Carousel.Item >
-                 <Jumbotron  className='project'>
-                    <ProfileCard/>
-                    <Welcome />
-                 </Jumbotron>
-               
-                <Carousel.Caption><h1>YOOOOOO</h1></Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                 <Jumbotron className='project'>
-                    <ProfileCard/>
-                    <Welcome />
-                 </Jumbotron>
-              </Carousel.Item>
-          </Carousel>
-        </div>
-    )
-}
+const PortfolioPreview = () => {
+  return (
+    <div>
+        {projects &&
+          projects.map((project) => (
+              <Jumbotron className="project-container">
+                <Project project={project}/>
+              </Jumbotron>          
+          ))}
 
-export default Portfolio;
+    </div>
+  );
+};
+
+export default PortfolioPreview;
