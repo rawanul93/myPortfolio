@@ -12,12 +12,13 @@ import { ReactComponent as SqlIcon } from "../../assets/postgresql.svg";
 import { ReactComponent as CssIcon } from "../../assets/cssIcon.svg";
 import { ReactComponent as HtmlIcon } from "../../assets/html5Icon.svg";
 import { ReactComponent as ReduxIcon } from "../../assets/redux.svg";
+import {ReactComponent as HerokuIcon}  from "../../assets/herokuIcon.svg";
 
-const Skills = () => {
+const Skills = ({handleClick}) => {
   return (
     <div className="skills-container">
       <div className="skill-group">
-        <h5>Front End</h5>
+        <h5>WHAT I WORK WITH</h5>
         <div className="skills">
           <div className="icon-name">
             <ReactIcon />
@@ -26,6 +27,26 @@ const Skills = () => {
           <div className="icon-name">
             <SassIcon />
             <span>Sass</span>
+          </div>
+          <div className="icon-name">
+            <ReduxIcon />
+            <span>Redux</span>
+          </div>
+          <div className="icon-name">
+            <FirebaseIcon />
+            <span>Firebase</span>
+          </div>
+          <div className="icon-name">
+            <NodeIcon />
+            <span>Node</span>
+          </div>
+          <div className="icon-name">
+            <ExpressIcon />
+            <span>Express</span>
+          </div>
+          <div className="icon-name">
+            <SqlIcon />
+            <span>PostgreSQL</span>
           </div>
           <div className="icon-name">
             <SemanticIcon />
@@ -43,41 +64,35 @@ const Skills = () => {
             <HtmlIcon />
             <span>HTML5</span>
           </div>
-        </div>
-      </div>
-      <div className='seperator'></div>
-      <div className="skill-group">
-        <h5>Back End</h5>
-        <div className="skills">
-          <div className="icon-name">
-            <FirebaseIcon />
-            <span>Firebase</span>
-          </div>
-          <div className="icon-name">
-            <ReduxIcon />
-            <span>Redux</span>
-          </div>
+         
+          
           <div className="icon-name">
             <RouterIcon />
             <span>React Router</span>
           </div>
           <div className="icon-name">
-            <NodeIcon />
-            <span>Node</span>
+            <HerokuIcon />
+            <span>Heroku</span>
           </div>
-          <div className="icon-name">
-            <ExpressIcon />
-            <span>Express</span>
-          </div>
-          <div className="icon-name">
-            <SqlIcon />
-            <span>PostgreSQL</span>
-          </div>
+         
         </div>
       </div>
-      <div className="skill-group" style={{ width: "200px" }}>
-        <h5 style={{textDecoration:'underline'}}>Full Resume</h5>
+
+      {/* <div className='seperator'></div>
+      <div className="skill-group">
+        <h5>Back End</h5>
+        <div className="skills">
+          
+        </div>
+      </div> */}
+      
+
+      <div className="skill-group" style={{marginTop: '60px', width:'300px'}}>
+      <button onClick={() => handleClick()} className='button-resume'>Full Resume</button>
+
+
       </div>
+      
     </div>
   );
 };

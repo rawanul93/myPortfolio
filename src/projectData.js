@@ -1,43 +1,46 @@
 // import ecommerceImage from './assets/portfolio-images/ecommerceAppimages.png'
 // import ecommerceImage from './assets/portfolio-images/ecommerce-app-images.png'
-import ecommerceImage from './assets/portfolio-images/ecommerceProjectImages.png'
+import ecommerceImage from './assets/portfolio-images/ecommerceProjectImages.png';
+import eventsImage from './assets/portfolio-images/eventsProjectImages.png';
 
 
 
 const PROJECTS = [
-    {   id: 1,
-        title: 'E-Commerce',
+    {
+        id: 1,
+        title: 'EVENTS',
+        description: 'An Event management web application',
+        features: [
+            'Users can sign up and sign in using Facebook, Google or email/password.', 
+            'Create and manage events.',
+            'View and join events or cancel your place as an attendee.',
+            'Follow/Unfollow other users.',
+            'Crop and Upload pictures.',
+            'Google maps integration.',
+            'Chat and reply to users on event pages.'
+        ],
+        images: [eventsImage],
+        linkToGithub: 'https://github.com/rawanul93/revents',
+        linkToDemo: 'https://revents-264421.web.app'
+    },
+    {   id: 2,
+        title: 'E-COMMERCE',
         description: 'An apprarel shopping web application',
         features: [
-            'User sign up and sign in using Google or email/password', 
+            'Users can sign up and sign in using Google or email/password', 
             'Add or Remove items to cart',
             'Edit items at checkout',
             'Make payments using Stripe',
             'Session Persistance',
-            'Firebase integration'
+            'Adding more features coming soon...'
 
         ],
         images: [ecommerceImage],
         linkToGithub: 'https://github.com/rawanul93/clothing-store-react',
         linkToDemo: 'https://bd-clothing-live.herokuapp.com/'
 
-    },
-    {
-        id: 2,
-        title: 'Events App',
-        description: 'An Event management web application',
-        features: [
-            'User sign up and sign in using Facebook, Google and email/password', 
-            'Create events and manage them',
-            'View and join events created by others',
-            'Upload pictures and crop them',
-            'Google maps integration',
-            'Comment and reply to comments in an event'
-        ],
-        images: ['./assets/portfolio-images/checkoutPage.png', './assets/portfolio-images/homePage.png'],
-        linkToGithub: 'https://github.com/rawanul93/clothing-store-react',
-        linkToDemo: 'https://bd-clothing-live.herokuapp.com/'
     }
+    
 ]
 
 export default PROJECTS;

@@ -2,20 +2,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // margin-right: 0px;
-    margin-top: 60px;
-    width: 240px;
+    padding-top: 100px;
+    margin-right: 200px;
+
+    width: auto;
     
     .profile-image {
-        width: 220px;
-        height: 200px;
-        margin-bottom: 1.5em;
+        width: auto;
+        height: 450px;
+        border-radius: 10px;
     }
-    .buttons {
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
+
+    .link-to-contact {
+        margin-top: 90px;
+        font-size: 20px;
+        color: #a7a6a6;
+        cursor: pointer;
+        transition: 0.3s ease-in;
+        border-style: solid;
+        
+        border-width: 0px 0px 1px 0px;
+
+        &:hover {
+            color: whitesmoke;
+            border-color:rgba(250, 111, 30, 0.9);
+            transition: 0.3s ease-out;
+
+        }
     }
+
 
     @media screen and (max-width: 800px){
         

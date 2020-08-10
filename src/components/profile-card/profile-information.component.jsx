@@ -6,7 +6,6 @@ import { ReactComponent as EmailIcon } from "../../assets/email.svg";
 import { ReactComponent as PhoneIcon } from "../../assets/phone.svg";
 import { ReactComponent as AddressIcon } from "../../assets/address.svg";
 //components
-import IconDetail from "../iconAndDetail/iconDetail.component";
 
 const ProfileInfo = () => {
   return (

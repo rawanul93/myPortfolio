@@ -1,10 +1,18 @@
 
 .App {
     margin: 0;
-    // background-color: #292727;
-    background-color: rgba($color: #1c1b1a, $alpha: 1);
+    //background-color: #292727;
+    background-color: rgba($color: #1b1b1b, $alpha: 1);
+   
+    font-family: 'Cabin', sans-serif;
+
+
+    // font-family: 'Righteous', cursive;
+
+
+
     overflow: hidden; 
-    padding: 20px 0px;
+    padding: 0px 0px;
     height: auto;
     // background-image: url("./assets/main-background1.jpg");
     background-size: contain;
@@ -12,8 +20,12 @@
   
     a {
         text-decoration: none;
-        color: black;
+        color: #e7e4e4;
+        line-height: 1.6;
+        word-spacing: 2px;
       }
+
+     
       
 }
 

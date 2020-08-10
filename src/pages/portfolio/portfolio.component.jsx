@@ -2,7 +2,7 @@ import React from "react";
 
 //syling
 import "./portfolio.styles.scss";
-import { Jumbotron, Carousel } from "react-bootstrap";
+import { Jumbotron } from "react-bootstrap";
 
 //components
 import Project from "../../components/project/project.component";
@@ -14,7 +14,7 @@ const projects = PROJECTS;
 
 const PortfolioPreview = () => {
   return (
-    <div>
+    <div className='portfolio'>
         {projects &&
           projects.map((project) => (
               <Jumbotron className="project-container">

@@ -2,7 +2,9 @@ import React from 'react';
 import './project.styles.scss';
 // import 'bootstrap-social';
 import icon from '../../assets/github-icon.png'
-import { Button } from 'react-bootstrap';
+
+//components
+import IconButton from '../icon-button/icon-button.component';
 
 
 const Project = ({ project: { title, features, images, linkToGithub, linkToDemo }}) => {
@@ -21,19 +23,10 @@ const Project = ({ project: { title, features, images, linkToGithub, linkToDemo 
                         }
                     </ul>
                         
-                    {/* <btn class="btn btn-social btn-github">
-                        <img className='button-icon' alt='icon' src={icon} /> Sign in with Twitter
-                    </btn> */}
-
-                    {/* <button>More Details</button> */}
-
-                    <div className='button-group'>
-                        <form action={linkToGithub} target="_blank">
-                            <button type='submit' className='github-btn'>
-                                <img className='button-icon' alt='icon' src={icon} />Github
-                            </button>
-                        </form>
-
+                    <div className='button-group'> 
+                    
+                        <IconButton link={linkToGithub} icon={icon} buttonClassName={'github-btn'} name={'GitHub'}/>
+                        
                         <form action={linkToDemo} target="_blank">
                             <button type='submit' className='demo-btn'>
                                Live Demo!

@@ -5,32 +5,115 @@
     color: #cecece;
     margin-top: 50px;
     margin-right: 40px;
+    width: auto;
+    word-spacing: 2px;
+    height: 350px;
+    padding-top: 20px;
+    
     
     .intro {
         font-size: 60px;
     }
    
     .welcome-main {
+        border-style: solid;
+        border-width: 0px 0px 0px 1px;
+        border-color:#a7a6a6;
 
         font-size: 36px;
-        // font-style: italic;
         animation: 2s ease-out transitionIn;
+        line-height: 1.6;
+        margin-top: 20px;
+        width: 700px;
+        color: #a7a6a6;
+        padding-left: 30px;
+        margin-bottom: 20px; 
+
 
     }
 
     .welcome-sub {
         display: flex;
-        justify-content: space-between;
+        line-height: 1.6;
+        font-size: 20px;
+        width: 1000px;
 
         .sub-text {
-            width: 70%;
+            width: 78%;
         }
-        .button-portfolio {
-            margin-right: 40px;
-            font-size: 20px;
-            background-color: #292727;
-            height: 60px;
+
+        .more-option {
+            margin-top: 10px;
+            margin-left: 20px;
+            padding: 8px 14px;
+            display: flex;
+            cursor: pointer;
+            transition: 0.3s ease-in;
+            border-style: solid;
+            border-width: 2px;
+            border-top: 1px;
+            border-bottom: 1px;
+            border-left: 1px;
+            border-radius: 0px 0px 0px 0px;
+            color: #a7a6a6;
+
+
+            .arrow-icon {
+                    transform: rotate(90deg);
+                    font-size: 24px;
+                    color:rgba(250, 111, 30, 0.8);
+                    //padding-top: 20px;
+                    margin-top:30px;
+                    opacity: 0;
+                    transition: 0.3s ease-in;
+
+                
+                }
+
+            &:hover {
+                color: white;
+                transition: 0.3s ease-out;
+                border-color: rgba(250, 111, 30, 0.8);
+
+                .arrow-icon {
+                    color:rgba(250, 111, 30, 0.8);
+                    //padding-top: 20px;
+                    opacity: 1;
+                    margin-left: 10px;
+                    transition: 0.3s ease-out;
+
+                }
+
+            }
+
+            .option {
+                font-size: 22px;
+                margin-right: 20px;
+                padding-top: 14px;
+                margin-left: 10px;
+                //text-decoration: underline;
+            }
+
+            // .arrow-icon {
+            //     transform: rotate(90deg);
+            //     font-size: 24px;
+            //     color:rgba(250, 111, 30, 0.8);
+            //     //padding-top: 20px;
+            //     margin-left: 10px;
+            //     visibility: hidden;
+
+            //     //transition: 0.3s ease-in;
+
+            //     &:hover {
+            //         visibility: 100;
+            //         transition: 0.3s ease-in;
+
+            //     }
+
+            // }
         }
+
+     
     }
 
     @keyframes transitionIn {

@@ -2,15 +2,24 @@
     height: fit-content;
 
     .home-container {
-        background-color: rgba($color: #1c1b1a, $alpha: 1);
+        background: linear-gradient(0deg, rgba(0,0,0,0) 0%, #111111 90%);
         display: flex;
         // flex-direction: row;
-        margin: 40px;
-        padding: 0px 60px;
-        border-bottom-style: solid;
-        border-color: rgba($color: #161615, $alpha: 1);
-        height: 600px;
+        margin: 60px 0px;
+        padding: 20px 80px;
+        
+
+        height: 800px;
+       
     }
+
+    .seperator {
+        border-bottom-style: solid;
+        border-color: rgba(250, 111, 30, 0);
+        border-width: 1px;
+        margin: 0px 80px;
+    }
+
 }
 
 

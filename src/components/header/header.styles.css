@@ -1,38 +1,48 @@
-/* .header-wrapper {
-    height: 60px;
-    border-bottom-style: outset;
-    border-width: 2px;
-    /* border-color: #3b3a38; 
+.header-wrapper {
+    background-color: #111111;
+    /* background: linear-gradient(45deg, #161616 50%, #131313 70%); */
 
-*/
+    width: 100vw;
+    height: 75px;
+    top: 0%;
+    position: fixed;
+    z-index: 100;
+    /* border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 0px 0px 2px 0px; */
+}
 
 .header
 {
     position: absolute;
-    top: 5%;
-    right: 0;
-    left:0;
-    width: 360px;
+    padding-top: 100px;
+    width: 500px;
     display: flex;
     margin: 0px auto;
     transform: translateY(-50%);
+    margin-left: 500px;
+    margin-right: 500px;
+
+    
+    /* top: 0; */
 }
 
 .header .option
 {
     position: relative;
-    /* width: 33.333%; */
+    width: auto;
     display: flex;
     justify-content: space-between;
     text-align: center;
-    color: #949494;
+    color: #757575;
     text-decoration: none;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Cabin', sans-serif; */
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bolder;
     letter-spacing: 1px;
     padding: 10px 30px;
+    /* margin: 0px 2px; */
     transition: 0.2s ease color;
   
 }
@@ -63,24 +73,26 @@
     height: 4px
 }
 
-.header .option:nth-child(1):before
+.header .option:nth-child(1):before, .header .option:nth-child(2):before, .header .option:nth-child(3):before, .header .option:nth-child(4):before
 {
-    background-color: yellow;
+    background-color: rgba(250, 111, 30, 1);
 }
 
-.header .option:nth-child(1):after
+.header .option:nth-child(1):after, .header .option:nth-child(2):after, .header .option:nth-child(3):after, .header .option:nth-child(4):after
 {
-    background-color: red;
+    background-color:rgb(255, 255, 255);
 }
 
-.header .option:nth-child(2):before
+/* .header .option:nth-child(2):before
 {
-    background-color: #00e2ff;
-}
+    background-color: rgb(255, 0, 0);
+    /* background-color: #00e2ff; */
 
-.header .option:nth-child(2):after
+
+/* .header .option:nth-child(2):after
 {
-    background-color: #89ff00;
+    background-color: rgb(0, 0, 0);
+    /* background-color: #89ff00; 
 }
 
 .header .option:nth-child(3):before
@@ -101,22 +113,22 @@
 .header .option:nth-child(5):after
 {
     background-color: palevioletred;
-}
+} */ 
 
 #indicator
 {
     position: absolute;
     left: 0%;
     bottom: 0;
-    /* width: 390px; */
-    width: 1em;
+    width: 110px;
+    /* width: 7em; */
     height: 3px;
     background-color: #fff;
     border-radius: 5px;
     transition: 0.2s ease left;
 }
 
-.header .option:hover, .header .selected
+.header .option:hover, .header .selected1, .header .selected2, .header .selected3, .header .selected4
 {
     color: #fff;
 }
@@ -126,37 +138,37 @@
     transform: scale(1);
 }
 
-.header .option:nth-child(1):hover ~ #indicator, .header .selected ~ #indicator
+.header .option:nth-child(1):hover ~ #indicator, .header .selected1 ~ #indicator
 {
-    background: linear-gradient(130deg, yellow, red);
-    width: 33.33%;
+    /* background: linear-gradient(130deg, rgb(255, 255, 255), rgb(255, 253, 253)); */
+    background-color: rgba(250, 111, 30, 1);
+    /* width: 33.33%;  */
+    left:0%;
 }
 
-.header .option:nth-child(2):hover ~ #indicator
+.header .option:nth-child(2):hover ~ #indicator, .header .selected2 ~ #indicator
 {
-    left: 33.33%;
-    background: linear-gradient(130deg, #00e2ff, #89ff00);
+    left: 25%;
+    background-color: rgba(250, 111, 30, 1);
+    /* background: linear-gradient(130deg, rgb(255, 255, 255), rgb(255, 253, 253)); */
+
+    /* background: linear-gradient(130deg, #00e2ff, #89ff00); */
 }
 
-.header .option:nth-child(3):hover ~ #indicator
+.header .option:nth-child(3):hover ~ #indicator, .header .selected3 ~ #indicator
 {
-    left: 70%;
-    background: linear-gradient(130deg, purple, palevioletred);
+    left: 50%;
+    background-color: rgba(250, 111, 30, 1);
+    /* background: linear-gradient(130deg, rgb(255, 255, 255), rgb(255, 253, 253)); */
+
+    /* background: linear-gradient(130deg, purple, palevioletred); */
 }
 
-/* #ytd-url {
-  display: block;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  padding: 10px 14px;
-  margin: 20px;
-  color: #fff;
-  font-family: Arial;
-  font-size: 14px;
-  text-decoration: none;
-  background-color: #000;
-  border-radius: 4px;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
-  z-index: 125;
-} */
+.header .option:nth-child(4):hover ~ #indicator, .header .selected4 ~ #indicator
+{
+    left: 73%;
+    background-color: rgba(250, 111, 30, 1);
+    /* background: linear-gradient(130deg, rgb(255, 255, 255), rgb(255, 253, 253)); */
+
+    /* background: linear-gradient(130deg, purple, palevioletred); */
+}

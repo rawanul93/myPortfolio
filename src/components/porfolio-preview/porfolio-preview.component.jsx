@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, createRef, useRef, useEffect } from "react";
 
 //syling
 import "./portfolio-preview.styles.scss";
@@ -9,24 +9,36 @@ import Project from '../project/project.component';
 
 //data
 import PROJECTS from '../../projectData';
+//context
+import { RefContext } from "../../contexts/refContext";
 
 const projects = PROJECTS;
 
 const PortfolioPreview = () => {
+
+  const { setRefPortfolio } = useContext(RefContext);
+        let ref = createRef();
+        const myRef = useRef(ref);
+   
+    useEffect(() => {
+    
+        setRefPortfolio(myRef);
+    })
+
   return (
-    <div>
-    <h1 className='section-title'>Projects</h1>
-      <Carousel>
-        {projects &&
-          projects.map((project) => (
-            <Carousel.Item id={project.id}>
-              <Jumbotron className="project-container">
-                <Project project={project}/>
-              </Jumbotron>
-              <Carousel.Caption>{project.title}</Carousel.Caption>
-            </Carousel.Item>
-          ))}
-      </Carousel>
+    <div ref={myRef} className='portfolio-preview'>
+      <h1 className='section-title'>Projects</h1>
+        <Carousel>
+          {projects &&
+            projects.map((project) => (
+              <Carousel.Item id={project.id}>
+                <Jumbotron className="project-container">
+                  <Project project={project}/>
+                </Jumbotron>
+                <Carousel.Caption>{project.title}</Carousel.Caption>
+              </Carousel.Item>
+            ))}
+        </Carousel>
     </div>
   );
 };
