@@ -84,7 +84,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="skill-group" style={{marginTop: '60px', width:'300px'}}>
+      <div className="skill-group" style={{marginTop: '70px', width:'300px'}}>
         <button onClick={() => setShow(true)} className='button-resume'>Full Resume</button> 
 
       </div>

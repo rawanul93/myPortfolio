@@ -35,12 +35,15 @@ const AboutMe = () => {
             
             <div className='about-1'>Hey there! I am Rawanul and I am a Fullstack developer specialized in React Js and Node Js.</div>
             <div className='about-2'>
-                Before becoming a developer, I pursued a bachelor's degree in <span style={{fontWeight:'bold', color:'whitesmoke'}}>Industrial Engineering</span> from the <span style={{fontWeight:'bold', color:'whitesmoke'}}>University of Toronto </span>where I majored in <span style={{fontWeight:'bold', color:'whitesmoke'}}>Information engineering</span> with a focus on <span className='highlight'>Ergomomic Design of Information systems</span> and <span className='highlight'>Human Centred Design</span>.
-                It helped shape my ability to work with various teams and develop designs that focuses on understanding the views and requirements of the users.
+                Even before deciding to become a developer, I had the outmost passion and drive towards innovation and efficiency in almost everything around me. I was always a jack of all trades, master of some (not none), so hence I pursued a bachelor's degree in <span style={{fontWeight:'bold', color:'whitesmoke'}}>Industrial Engineering</span> from the <span style={{fontWeight:'bold', color:'whitesmoke'}}>University of Toronto </span>. Industrial engineering dabbles in a wide variety of fields including programming, physics, business etc so it clicked. 
+                I majored in <span style={{fontWeight:'bold', color:'whitesmoke'}}>Information engineering</span> with a focus on <span className='highlight'>Ergomomic Design of Information systems</span> and <span className='highlight'>Human Centred Design</span>.
              </div>
             <div className='about-2'>
-                I realized soon after graduating, wearing several hats and working as a pure industrial engineer, that my true passion lies with coding and developing applications and technologies that encourage innovation and helps both organizations and people become more efficient.
-                I code with the intention of providing fast and responsive applications that provide users with the best experience and satisfies clients at the same time.
+            I realized soon after graduating, wearing several hats and working as a pure industrial engineer, that my true passion lies with coding and developing applications and technologies that encourage innovation and helps organizations and people become more efficient. 
+            In order to go full throttle, I had to dive deeper into the world of coding and found my love for it in React Js. 
+            Immediately afterwards, I found myself coding regularly, trying to build cool apps and learning and growing my skillset.
+                {/* I realized soon after graduating, wearing several hats and working as a pure industrial engineer, that my true passion lies with coding and developing applications and technologies that encourage innovation and helps both organizations and people become more efficient.
+                I code with the intention of providing fast and responsive applications that provide users with the best experience and satisfies clients at the same time. */}
             </div>
 
         <div className='mini-contact'></div>

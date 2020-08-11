@@ -4,7 +4,6 @@ import ecommerceImage from './assets/portfolio-images/ecommerceProjectImages.png
 import eventsImage from './assets/portfolio-images/eventsProjectImages.png';
 
 
-
 const PROJECTS = [
     {
         id: 1,
@@ -27,12 +26,12 @@ const PROJECTS = [
         title: 'E-COMMERCE',
         description: 'An apprarel shopping web application',
         features: [
-            'Users can sign up and sign in using Google or email/password', 
-            'Add or Remove items to cart',
-            'Edit items at checkout',
-            'Make payments using Stripe',
-            'Session Persistance',
-            'Adding more features coming soon...'
+            'Users can sign up and sign in using Google or email/password.', 
+            'Add or Remove items to cart.',
+            'Edit items at checkout.',
+            'Make payments using Stripe.',
+            'Session Persistance.',
+            'Adding more features soon...'
 
         ],
         images: [ecommerceImage],

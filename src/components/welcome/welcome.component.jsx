@@ -14,7 +14,8 @@ const Welcome = () => {
 
   const scrollToRef = (ref) =>  {
       console.log(ref);
-      ref.current.scrollIntoView()};
+      ref.current.scrollIntoView()
+  };
 
     const { changeTab } = useContext(SelectedTabContext);
     let history = useHistory();
@@ -31,7 +32,7 @@ const Welcome = () => {
           I am a <span style={{ fontWeight:'bolder' , color: "whitesmoke" }}>fullstack developer</span> specialized in <span style={{color: '#00D8FF'}}>React</span> and <span style={{color: '#539E43'}}>Node Js</span>.</span>
         <div className="welcome-sub">
           <span className="sub-text">
-            I develop fast and responsive web applications that will bring your ideas to life. My passion is focussing on delivering positive and engaging experiences using seamless and efficient user interfaces and designs.
+            I develop fast and responsive web applications that will bring your ideas to life.
           </span>
           <div className='more-option'>
             <div className='option' onClick={() => scrollToRef(refAbout)}>Learn More</div>

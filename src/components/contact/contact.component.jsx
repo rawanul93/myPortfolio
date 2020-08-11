@@ -20,11 +20,11 @@ const Contact = () => {
             <div className='list'>
                 <div className='list-item'>
                     <img alt='call' src={callIcon}/>
-                    <span className='info'>+1-(647)-927-6871 </span>
+                    <span className='info'>+1 (647) 927-6871 </span>
                 </div>
                 <div className='list-item'>
                     <img alt='call' src={emailIcon}/>
-                    <span className='info'>rawanul.momen.utornto.ca</span>
+                    <span className='info'>rawanul.momen@mail.utoronto.ca</span>
                 </div>
                 <div className='list-item'>
                     <img alt='call' src={locationIcon}/>
