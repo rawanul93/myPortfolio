@@ -6,11 +6,11 @@ import {Jumbotron} from "react-bootstrap";
 import ProfileCard from "../../components/profile-card/profile-card.component";
 import Welcome from '../../components/welcome/welcome.component';
 import PortfolioPreview from "../../components/porfolio-preview/porfolio-preview.component";
-import Footer from "../../components/footer/footer.component";
+import AboutMe from "../../components/about-me/about-me.component";
 import { RefContext } from "../../contexts/refContext";
 import Contact from "../../components/contact/contact.component";
 
-const HomePage = () => {
+const HomePage = ({ setShow }) => {
   const { setRefHome } = useContext(RefContext);
   let ref = createRef();
   const myRef = useRef(ref);
@@ -24,11 +24,11 @@ const HomePage = () => {
     <div ref={myRef} className='homePage'>
       <Jumbotron className="home-container">
         <Welcome />
-        <ProfileCard />   
+        <ProfileCard/>   
       </Jumbotron>
       <div className='seperator'></div>
       <PortfolioPreview />
-      <Footer/>
+      <AboutMe />
       <Contact />
 
     

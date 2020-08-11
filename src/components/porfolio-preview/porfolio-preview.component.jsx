@@ -30,9 +30,9 @@ const PortfolioPreview = () => {
       <h1 className='section-title'>Projects</h1>
         <Carousel>
           {projects &&
-            projects.map((project) => (
-              <Carousel.Item id={project.id}>
-                <Jumbotron className="project-container">
+            projects.map((project, idx) => (
+              <Carousel.Item key={project.id}>
+                <Jumbotron  className="project-container">
                   <Project project={project}/>
                 </Jumbotron>
                 <Carousel.Caption>{project.title}</Carousel.Caption>

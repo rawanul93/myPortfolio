@@ -1,5 +1,5 @@
 import React, {useContext, useRef, createRef, useEffect} from 'react'
-import './footer.styles.scss';
+import './about-me.styles.scss';
 import aboutMeImage from '../../assets/profilePicture.png';
 import IconButton from '../icon-button/icon-button.component';
 import githubIcon  from '../../assets/github-icon.png';
@@ -8,7 +8,7 @@ import facebookIcon from '../../assets/facebook-icon.svg';
 import { RefContext } from '../../contexts/refContext';
 
 
-const Footer = () => {
+const AboutMe = () => {
     const { setRefAbout } = useContext(RefContext);
         let ref = createRef();
         const myRef = useRef(ref);
@@ -39,8 +39,8 @@ const Footer = () => {
                 It helped shape my ability to work with various teams and develop designs that focuses on understanding the views and requirements of the users.
              </div>
             <div className='about-2'>
-                I realized soon after graduating, wearing several hats and working as a pure industrial engineer, that my true passion lies with coding and developing applications and technologies that encourage innovation and helps both organizations and people become more efficient overall.
-                I code with the intention of providing fast and responsive applications that has the best user interface so that it leaves users with a very positve experience.
+                I realized soon after graduating, wearing several hats and working as a pure industrial engineer, that my true passion lies with coding and developing applications and technologies that encourage innovation and helps both organizations and people become more efficient.
+                I code with the intention of providing fast and responsive applications that provide users with the best experience and satisfies clients at the same time.
             </div>
 
         <div className='mini-contact'></div>
@@ -49,4 +49,4 @@ const Footer = () => {
     )
 }
 
-export default Footer;
+export default AboutMe;

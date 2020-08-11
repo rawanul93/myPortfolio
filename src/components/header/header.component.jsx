@@ -13,13 +13,12 @@ const Header = () => {
 
   
   useScrollPosition(({ prevPos, currPos }) => {
-    console.log(currPos);
     if(prevPos !== currPos) {
 
-      if(currPos.y >-863) {
+      if(currPos.y >-758) {
         changeTab(1);
       }
-      if(currPos.y <= -863 && currPos.y > -1809) {
+      if(currPos.y <= -758 && currPos.y > -1809) {
         changeTab(2);
       }
 

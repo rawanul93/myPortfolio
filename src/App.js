@@ -1,34 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 //components and pages
 import Header from './components/header/header.component';
 import Homepage from './pages/homepage/homepage.component';
-import Portfolio from './pages/portfolio/portfolio.component';
-import Contact from './pages/contact/contact.component';
-import Resume from './pages/resume/resume';
+import ResumeModal from './components/resume-modal/resume-modal';
 
 //context
 import SelectTabContextProvider from './contexts/selectedTabContext';
 import RefContextProvider from './contexts/refContext';
+import ModalContextProvider from './contexts/modalContext';
 
 
 const App = () => {
-
+ 
     return (
       <div className="App">
       <RefContextProvider>
         <SelectTabContextProvider>
+         <ModalContextProvider>
             <Header />
-            <Switch>
-              <Route exact path='/' component={Homepage}/>
-              <Route path='/portfolio' component={Portfolio}/>
-              <Route path='/contact' component={Contact}/>
-              <Route path='/resume' component={Resume}/>
-            </Switch>
+            <ResumeModal />
+            <Route path='/' component={Homepage}/>
+         </ModalContextProvider>    
         </SelectTabContextProvider>
       </RefContextProvider>
         

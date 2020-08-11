@@ -14,10 +14,6 @@ const Contact = () => {
         setRefContact(myRef);
     })
 
-    const handleClick = () => {
-
-    }
-
     return (
         <div ref={myRef} className='contact-container'>
             <h1 className='title'>Contact</h1>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./skills.styles.scss";
 import { ReactComponent as ReactIcon } from "../../assets/react.svg";
 import { ReactComponent as SassIcon } from "../../assets/sass.svg";
@@ -14,7 +14,13 @@ import { ReactComponent as HtmlIcon } from "../../assets/html5Icon.svg";
 import { ReactComponent as ReduxIcon } from "../../assets/redux.svg";
 import {ReactComponent as HerokuIcon}  from "../../assets/herokuIcon.svg";
 
-const Skills = ({handleClick}) => {
+//context
+import { ModalContext } from "../../contexts/modalContext";
+
+const Skills = () => {
+
+  const { setShow } = useContext(ModalContext);
+
   return (
     <div className="skills-container">
       <div className="skill-group">
@@ -78,18 +84,8 @@ const Skills = ({handleClick}) => {
         </div>
       </div>
 
-      {/* <div className='seperator'></div>
-      <div className="skill-group">
-        <h5>Back End</h5>
-        <div className="skills">
-          
-        </div>
-      </div> */}
-      
-
       <div className="skill-group" style={{marginTop: '60px', width:'300px'}}>
-      <button onClick={() => handleClick()} className='button-resume'>Full Resume</button>
-
+        <button onClick={() => setShow(true)} className='button-resume'>Full Resume</button> 
 
       </div>
       

@@ -14,6 +14,7 @@
         border-radius: 50%;
         padding: 0px;
         margin: 0px 10px;
+        height: auto;
         
         img {
             height: 32px;
@@ -21,6 +22,7 @@
         }
 
         &:hover {
+
             background-color: rgba(250, 111, 30, 0.9);
             transition: 0.3s ease-out;
         }
